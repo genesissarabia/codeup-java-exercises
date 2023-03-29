@@ -60,7 +60,7 @@ public class MethodsExercises {
 
 //    public static int rollDice(int n){
 //        Scanner sc = new Scanner(System.in);
-//        System.out.print("How many sides on your dice? ");
+//        System.out.println("How many sides on your dice? ");
 //        int input = sc.nextInt();
 //
 //        Random randomNum = new Random();
