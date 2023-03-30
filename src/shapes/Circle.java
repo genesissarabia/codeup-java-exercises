@@ -1,13 +1,10 @@
 package shapes;
 
-import util.Input;
-
-import java.util.Scanner;
-
 public class Circle {
 
     private double radius;
-    private Scanner sc;
+
+    public Circle(){}
 
     public Circle (double radius){
         this.radius = radius;

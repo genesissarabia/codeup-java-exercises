@@ -3,9 +3,11 @@ package util;
 public class InputTest {
 
     public static void main(String[] args) {
+        Input myInput = new Input();
+
+
         //getString
         System.out.println("Please enter a string");
-        Input myInput = new Input();
         System.out.println(myInput.getString());
 
         //yesNo
