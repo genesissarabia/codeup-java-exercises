@@ -10,7 +10,11 @@ public class MethodsExercises {
 //        System.out.println(division(20, 5));
 //        System.out.println(modulus(20, 5));
 
-        System.out.println(getFactorial());
+        System.out.println("The factorial for your number is: " + getFactorial());
+        int dieOne = rollDice();
+        int dieTwo = rollDice();
+        System.out.println("Your first die shows: " + dieOne);
+        System.out.println("Your second die shows: " + dieTwo);
 
     }
 
@@ -58,24 +62,18 @@ public class MethodsExercises {
 
     //4.
 
-//    public static int rollDice(int n){
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("How many sides on your dice? ");
-//        int input = sc.nextInt();
-//
-//        Random randomNum = new Random();
-//        for (int i = 0; i < input; i++) {
-//
-//        }
-//
-//
-//
-//
-//
-//
-//    }
+    public static int rollDice() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How many sides on your dice? ");
+        int sidesInput = sc.nextInt();
 
+        Random random = new Random();
+        int sidesRandom = random.nextInt(sidesInput) + 1;
 
+        return sidesRandom;
+    }
 
 
 }
+
+
