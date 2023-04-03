@@ -1,6 +1,6 @@
 package movies;
 
-
+import util.Input;
 import java.util.Scanner;
 
 import static movies.MoviesArray.findAll;
@@ -13,6 +13,7 @@ public class MoviesApplication {
         boolean confirm;
 
         do {
+            Input selection = new Input();
             System.out.println("Choose one of the following options: ");
             System.out.println("0 - exit\n1 - view all movies\n" +
                     "2 - view movies in the animated category\n" +
@@ -21,13 +22,12 @@ public class MoviesApplication {
                     "5 - view movies in the sci-fi category");
             Scanner sc = new Scanner(System.in);
             System.out.print("Select an option: ");
-            int selection = sc.nextInt();
-            System.out.println(selection);
+            
 
             Movie[] arrayMovies = findAll();
 
 
-            switch (selection) {
+            switch (selection.getInt(0,5)) {
                 case 0:
                     System.out.println("Thank you for using our Movie Application. App closed.");
                     break;
