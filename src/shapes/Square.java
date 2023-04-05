@@ -7,6 +7,8 @@ public class Square extends Quadrilateral{
         super(side, side);
     }
 
+
+    //For setWidth and setLength, we needed to add inside this.width/length because we needed to establish that in each setMethod, no matter if it was named setWidth or setLength specifically, we were changing both. With this being said, for squares, length and width are literally the same, and if we didn't establish that, Java would recognize it as a type of rectangle. So again, because we are establishing in both setMethods the length and width are both being changed, it will be able to recognize that the length and width are for a square. This also comes into play due to the constructor above, "side" is length and width recognized from the Quadrilateral constructor it's inheriting from.
     @Override
     public void setWidth(double side) {
         this.width = side;
