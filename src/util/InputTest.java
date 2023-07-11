@@ -6,17 +6,18 @@ public class InputTest {
         Input myInput = new Input();
 
 
-        //getString
-        System.out.println("Please enter a string");
-        System.out.println(myInput.getString());
-
-        //yesNo
-        System.out.println("Please enter yes or no");
-        System.out.println(myInput.yesNo());
+//        //getString
+//        System.out.println("Please enter a string");
+//        System.out.println(myInput.getString());
+//
+//        //yesNo
+//        System.out.println("Please enter yes or no");
+//        System.out.println(myInput.yesNo());
 
         //getInt(empty)
         System.out.println("Please enter a number");
         System.out.println(myInput.getInt());
+
 
         //getInt(parameters)
         System.out.println("Please enter a number");
@@ -25,6 +26,7 @@ public class InputTest {
         //getDouble(empty)
         System.out.println("Please enter a number with a decimal");
         System.out.println(myInput.getDouble());
+
 
         //getDouble(parameters)
         System.out.println("Please enter a number with a decimal");
