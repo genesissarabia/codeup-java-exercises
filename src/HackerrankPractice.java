@@ -162,13 +162,36 @@ public class HackerrankPractice {
 
 //5. A question about array removal and addition, where two values are removed and two new values are added to an array, resulting in a numeric output.
 
+//6. 6. "Possible Path" HackerRank
 
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
 
+            int numTestCases = scanner.nextInt();
+            scanner.nextLine(); // Consume the newline character after reading the integer
 
+            for (int i = 0; i < numTestCases; i++) {
+                int x = scanner.nextInt();
+                int y = scanner.nextInt();
+                int a = scanner.nextInt();
+                int b = scanner.nextInt();
 
+                String result = canReachDestination(x, y, a, b);
+                System.out.println(result);
+            }
 
+            scanner.close();
+        }
 
-}
+        public static String canReachDestination(int x, int y, int a, int b) {
+            if ((x - a) % (y - b) == 0) {
+                return "YES";
+            } else {
+                return "NO";
+            }
+        }
+    }
+
 
 
 
